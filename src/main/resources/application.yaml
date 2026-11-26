@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: "staydesk"
+  datasource:
+    url: "${DB_URL:jdbc:postgresql://localhost:5432/staydesk}"
+    username: "${DB_USER:staydesk}"
+    password: "${DB_PASSWORD:dev}"
+  jpa:
+    hibernate:
+      ddl-auto: validate
